@@ -1,0 +1,45 @@
+.gallery {
+  background-color: var(--background);
+  display: grid;
+  place-items: center;
+  height: 40vh;
+}
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 600px;
+}
+
+.image {
+  border-radius: 16px;
+  height: 200px;
+  overflow: hidden;
+  background-color: var(--background);
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+  flex: 0.25;
+}
+
+.image img {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image:hover {
+  flex: 1;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-figure {
+  object-fit: contain;
+}

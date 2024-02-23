@@ -1,0 +1,13 @@
+.image-div {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-div img {
+  padding: 10px;
+  width: calc(100% - 20px);
+  border-radius: 20px;
+}

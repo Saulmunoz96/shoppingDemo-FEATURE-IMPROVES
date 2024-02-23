@@ -1,0 +1,59 @@
+.cartShop {
+  background: #1c2a3b;
+  display: none;
+  padding: 32px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 200px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+.cartShop img {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
+.cartShop li {
+  border-bottom: 1px solid #444;
+  padding-bottom: 16px;
+  list-style-type: none;
+}
+
+.cartShop footer {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartShop footer button {
+  padding: 8px;
+}
+
+.cartShop-button {
+  align-items: center;
+  background: #01eac2;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  padding: 4px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  transition: all 0.3s ease;
+  width: 32px;
+  z-index: 9999;
+}
+
+.cartShop-button:hover {
+  scale: 1.1;
+}
+
+.cartShop-button ~ input:checked ~ .cartShop {
+  height: 100%;
+  display: block;
+}

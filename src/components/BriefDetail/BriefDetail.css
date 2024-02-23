@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+}
+
+.brief {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brief span {
+  font-size: 25px;
+}
