@@ -20,6 +20,20 @@
   flex-direction: column;
   justify-content: center;
 }
+.textInput {
+  height: 20px;
+}
+
+.rowText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cart label {
+  color: white;
+}
 
 .cart-title {
   text-align: center;

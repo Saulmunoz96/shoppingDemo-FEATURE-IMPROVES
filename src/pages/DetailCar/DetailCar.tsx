@@ -100,7 +100,7 @@ export function DetailCar() {
   };
 
   const callBill = () => {
-    fetch(`${REACT_APP_MS_URL}/ms-comp-sales/bills`, {
+    fetch(${REACT_APP_MS_URL}/ms-comp-sales/bills, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -122,47 +122,61 @@ export function DetailCar() {
         <div className="dataCustomer">
           <div className="dataRow">
             <h2 className="cart-title">Datos de Facturacion</h2>
-
-            <input
-              type="text"
-              id="cedula"
-              value={cedula}
-              onChange={handleChange}
-            />
+            <div className="rowText">
+              <label>Cedula</label>
+              <input
+                className="textInput"
+                type="text"
+                id="cedula"
+                value={cedula}
+                onChange={handleChange}
+              />
+            </div>
           </div>
           <div className="dataRow">
-            <input
-              type="text"
-              id="nombre"
-              value={nombre}
-              onChange={handleNombre}
-            />
-            <input
-              type="text"
-              id="apellido"
-              value={apellido}
-              onChange={handleApellido}
-            />
+            <div className="rowText">
+              <label>Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                value={nombre}
+                onChange={handleNombre}
+              />
+            </div>
+            <div className="rowText">
+              <label>Apellido</label>
+              <input
+                type="text"
+                id="apellido"
+                value={apellido}
+                onChange={handleApellido}
+              />
+            </div>
           </div>
           <div className="dataRow">
-            <input
-              type="text"
-              id="direccion"
-              value={direccion}
-              onChange={handleDireccion}
-            />
-
-            <input
-              type="text"
-              id="email"
-              value={email}
-              onChange={handleEmail}
-            />
+            <div className="rowText">
+              <label>Direccion</label>
+              <input
+                type="text"
+                id="direccion"
+                value={direccion}
+                onChange={handleDireccion}
+              />
+            </div>
+            <div className="rowText">
+              <label>Email</label>
+              <input
+                type="text"
+                id="email"
+                value={email}
+                onChange={handleEmail}
+              />
+            </div>
           </div>
           <div>
             <button
               onClick={() => {
-                handleNavigation(`/bills`);
+                handleNavigation(/bills);
               }}
               className="cart-button-middle"
             >
