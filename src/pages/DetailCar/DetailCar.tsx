@@ -100,7 +100,7 @@ export function DetailCar() {
   };
 
   const callBill = () => {
-    fetch(${REACT_APP_MS_URL}/ms-comp-sales/bills, {
+    fetch(`${REACT_APP_MS_URL}/ms-comp-sales/bills`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -176,7 +176,7 @@ export function DetailCar() {
           <div>
             <button
               onClick={() => {
-                handleNavigation(/bills);
+                handleNavigation(`/bills`);
               }}
               className="cart-button-middle"
             >
